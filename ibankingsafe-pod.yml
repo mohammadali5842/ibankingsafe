@@ -25,14 +25,14 @@ spec:
         timeoutSeconds: 15
         failureThreshold: 3    
       env:
-        - name: db.username
+        - name: "db.username"
           valueFrom:
-            configSecretKeyRef:
+            SecretKeyRef:
               name: ibankingsafesecret
               key:  username 
-        - name: db.password
+        - name: "db.password"
           valueFrom:
-            configSecretKeyRef:
+            SecretKeyRef:
               name: ibankingsafesecret
               key: password       
 
