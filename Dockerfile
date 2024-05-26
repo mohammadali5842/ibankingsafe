@@ -8,7 +8,7 @@ RUN mkdir -p /u01/apps
 WORKDIR /u01/middleware
 
 ADD https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz .
-RUN tar -cvzf openjdk-11.0.2_linux-x64_bin.tar.gz
+RUN tar -xvzf openjdk-11.0.2_linux-x64_bin.tar.gz
 RUN rm openjdk-11.0.2_linux-x64_bin.tar.gz
 
 WORKDIR /u01/apps
