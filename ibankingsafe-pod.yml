@@ -27,12 +27,12 @@ spec:
       env:
         - name: "db.username"
           valueFrom:
-            SecretKeyRef:
+            secretKeyRef:
               name: ibankingsafesecret
               key:  username 
         - name: "db.password"
           valueFrom:
-            SecretKeyRef:
+            secretKeyRef:
               name: ibankingsafesecret
               key: password       
 
